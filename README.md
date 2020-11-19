@@ -7,3 +7,5 @@
 3. Celotno konfiguracijo iz mape Konfiguracija_NTP si skopiramo na strežnik.
 
 4. Konfiguracijo nato poženemo znotraj mape z uporabo ukaza ansible-playbook konfiguracija_ntp.yml -u <uporabnisko ime> -k 
+  
+5. Delovanje konfiguracije lahko nato preverimo z ukazom chronyc sources
