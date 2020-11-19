@@ -8,4 +8,4 @@
 
 4. Konfiguracijo nato poženemo znotraj mape z uporabo ukaza <b>ansible-playbook konfiguracija_ntp.yml -u <uporabnisko ime> -k</b>
   
-5. Delovanje konfiguracije lahko nato preverimo z ukazom <b>chronyc sources</b>.
+5. Delovanje konfiguracije lahko nato preverimo z ukazom <b>chronyc sources</b> ali <b>chronyc tracking</b>.
