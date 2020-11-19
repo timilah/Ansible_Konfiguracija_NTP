@@ -1,0 +1,27 @@
+---
+- name: Konfiguracija NTP strežnika (Chrony)
+  hosts: all
+  become: yes
+  tasks:
+
+   - name: Namesti NTP paket
+     yum: 
+      name: chrony
+      state: installed
+
+   - name: Zazeni in omogoci NTP service (Chrony)
+     service:
+      name: chronyd.service
+      state: started
+      enabled: yes
+
+   - name: Kopiraj NTP konfiguracijo
+     copy:
+      src: files/ntp.conf
+      dest: /etc/chrony.conf
+      backup: yes
+
+   - name: Ponovni zagon servica NTP (Chrony)
+     service:
+       name: chronyd.service
+       state: restarted
