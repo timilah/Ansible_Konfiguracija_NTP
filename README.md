@@ -1,0 +1,1 @@
+# Ansible_Konfiguracija_NTP
