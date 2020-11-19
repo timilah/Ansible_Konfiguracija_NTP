@@ -1,0 +1,2 @@
+[local]
+IP_ali_FQDN_streznika ansible_port=Port_za_SSH
